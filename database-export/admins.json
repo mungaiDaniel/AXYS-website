@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "69707c6866da48466b8a0f24",
+    "email": "sk@horizonafrica.com",
+    "password": "$2b$10$CxiHVA6WPT1Li3yx3m8psufIwwRILl43h5J0zHGJItt/WziyUjl8.",
+    "name": "Admin",
+    "role": "697bb9cc5cb6eedbd7958c1f",
+    "isActive": true,
+    "createdAt": "2026-01-21T07:12:40.204Z",
+    "updatedAt": "2026-01-29T19:49:32.316Z",
+    "__v": 0
+  }
+]

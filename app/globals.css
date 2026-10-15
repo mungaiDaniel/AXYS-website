@@ -1,0 +1,559 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 226 47% 8%;
+    --foreground: 210 40% 98%;
+    --card: 226 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 226 47% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 221.2 83.2% 53.3%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 226 30% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 221.2 83.2% 53.3%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 226 30% 18%;
+    --input: 226 30% 18%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+
+  /* Glassmorphism Utility */
+  .glass {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-light {
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(65, 105, 225, 0.2);
+  }
+
+  /* Modal-specific glassmorphism — inline styles handle blur,
+     these classes handle dark mode color switching */
+  .glass-modal-backdrop {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .dark .glass-modal-backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .glass-modal-card {
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  .dark .glass-modal-card {
+    background: rgba(20, 25, 45, 0.92);
+  }
+
+  /* Breathe Animation for Loading */
+  .animate-breathe {
+    animation: breathe 2.5s ease-in-out infinite;
+  }
+
+  /* Animation utilities */
+  .animate-stagger-1 {
+    animation: fade-up 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+
+  .animate-stagger-2 {
+    animation: fade-up 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .animate-stagger-3 {
+    animation: fade-up 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  .animate-stagger-4 {
+    animation: fade-up 0.6s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #00BCD4 0%, #0017BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .dark .gradient-text {
+    background: linear-gradient(135deg, #00BCD4 0%, #4169E1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Blue text that adapts to theme */
+  .text-brand-blue {
+    color: #0017BF;
+  }
+
+  .dark .text-brand-blue {
+    color: #4169E1;
+  }
+
+  /* Breathing gradient background */
+  .breathing-gradient {
+    background: linear-gradient(135deg, #191970, #4169E1, #191970, #4169E1);
+    background-size: 400% 400%;
+    animation: gradient-move 8s ease infinite;
+  }
+
+  /* 3D Card Tilt Effect */
+  .card-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+
+  .card-3d:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(-2deg);
+  }
+
+  /* ── About page member cards (Board / Management / Team / Values) ── */
+  .about-member-card {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+
+  /* Light-mode base */
+  :root .about-member-card,
+  .about-member-card {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  /* Dark-mode base */
+  .dark .about-member-card {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  /* Hover — card lift + blue border */
+  .about-member-card:hover {
+    transform: scale(1.03) translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 23, 191, 0.18);
+  }
+
+  /* Inner glow overlay — child div that fades in on hover */
+  .about-member-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 0.75rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: radial-gradient(ellipse at 50% 110%, rgba(0, 23, 191, 0.22) 0%, transparent 65%);
+    z-index: 0;
+  }
+
+  .about-member-card:hover .about-member-glow {
+    opacity: 1;
+  }
+
+  /* "Tap to explore" hint — shown when service card is hovered */
+  .about-member-card:hover .service-tap-hint {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes breathe {
+
+  0%,
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* Modal animations — used via inline styles, so must be raw @keyframes */
+@keyframes modal-expand {
+  0% {
+    opacity: 0;
+    transform: scale(0.05);
+    filter: blur(10px);
+  }
+
+  60% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes modal-shrink {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.05);
+    filter: blur(10px);
+  }
+}
+
+@keyframes modal-card-expand {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(20px);
+    filter: blur(8px);
+  }
+
+  50% {
+    transform: scale(1.02) translateY(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0px);
+  }
+}
+
+@keyframes modal-card-shrink {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.7) translateY(20px);
+    filter: blur(8px);
+  }
+}
+
+@keyframes modal-content-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-content-fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Custom scrollbar - narrow and auto-hide */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: opacity 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Auto-hide scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.dark * {
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   SCROLL FADE-IN ANIMATIONS
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Default fade-in-up animation (similar to EmpireFX) */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade in only (no movement) */
+.scroll-fade-only {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.scroll-fade-only.is-visible {
+  opacity: 1;
+}
+
+/* Slide in from right */
+.scroll-slide-right {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-slide-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide in from left */
+.scroll-slide-left {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale in animation */
+.scroll-scale-in {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-scale-in.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered animation delays for child elements */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.stagger-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-item:nth-child(1).is-visible {
+  transition-delay: 0ms;
+}
+
+.stagger-item:nth-child(2).is-visible {
+  transition-delay: 100ms;
+}
+
+.stagger-item:nth-child(3).is-visible {
+  transition-delay: 200ms;
+}
+
+.stagger-item:nth-child(4).is-visible {
+  transition-delay: 300ms;
+}
+
+.stagger-item:nth-child(5).is-visible {
+  transition-delay: 400ms;
+}
+
+.stagger-item:nth-child(6).is-visible {
+  transition-delay: 500ms;
+}

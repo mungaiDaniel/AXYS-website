@@ -1,0 +1,84 @@
+{
+  "ipoDate": "2026-10-13T23:59:00+01:00",
+  "stats": {
+    "yearsInMarket": 30,
+    "clientsServed": 50000
+  },
+  "research": [
+    {
+      "id": 1,
+      "title": "Kenya Market Report Q1 2026",
+      "date": "2026-01-15",
+      "category": "Market Analysis",
+      "pdfUrl": "#",
+      "description": "Comprehensive analysis of the Kenyan stock market performance in Q1 2026"
+    },
+    {
+      "id": 2,
+      "title": "East Africa Investment Outlook",
+      "date": "2026-02-20",
+      "category": "Regional Insights",
+      "pdfUrl": "#",
+      "description": "Strategic investment opportunities across East African markets"
+    },
+    {
+      "id": 3,
+      "title": "NSE IPO Pipeline Analysis",
+      "date": "2026-03-10",
+      "category": "IPO Research",
+      "pdfUrl": "#",
+      "description": "Detailed analysis of upcoming IPOs on the Nairobi Securities Exchange"
+    },
+    {
+      "id": 4,
+      "title": "Sectoral Performance Review",
+      "date": "2026-01-28",
+      "category": "Sector Analysis",
+      "pdfUrl": "#",
+      "description": "Banking, telecommunications, and energy sector performance review"
+    },
+    {
+      "id": 5,
+      "title": "Global Markets Weekly Digest",
+      "date": "2026-03-15",
+      "category": "Global Markets",
+      "pdfUrl": "#",
+      "description": "Weekly summary of global market trends affecting African investments"
+    },
+    {
+      "id": 6,
+      "title": "Fixed Income Opportunities 2026",
+      "date": "2026-02-05",
+      "category": "Fixed Income",
+      "pdfUrl": "#",
+      "description": "Analysis of government bonds and corporate debt instruments"
+    }
+  ],
+  "ipoTimeline": [
+    {
+      "phase": "Application List Opens",
+      "date": "14 September 2026",
+      "status": "pending"
+    },
+    {
+      "phase": "Application List Closes",
+      "date": "7 October 2026 (AXYS deadline)",
+      "status": "pending"
+    },
+    {
+      "phase": "Collation of Returns",
+      "date": "27 October 2026",
+      "status": "pending"
+    },
+    {
+      "phase": "SEC No-Objection to Basis of Allotment",
+      "date": "11 November 2026",
+      "status": "pending"
+    },
+    {
+      "phase": "NGX Listing / Commencement of Trading",
+      "date": "Allotment Date + 15 Business Days",
+      "status": "pending"
+    }
+  ]
+}

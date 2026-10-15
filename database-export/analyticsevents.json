@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "697b3f8910a1ba82e3b8998f",
+    "eventType": "page_view",
+    "pageUrl": "/test",
+    "elementId": "",
+    "timestamp": "2026-01-29T11:07:53.155Z",
+    "sessionId": "",
+    "userId": "",
+    "userAgent": "curl/7.88.1",
+    "ipAddress": "127.0.0.1",
+    "referrer": "",
+    "deviceType": "desktop",
+    "__v": 0
+  }
+]

@@ -1,0 +1,21 @@
+# AIB-AXYS Africa - Robots.txt
+# https://www.aib-axysafrica.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.aib-axysafrica.com/sitemap.xml
+
+# Disallow admin/api routes (if any in future)
+Disallow: /api/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

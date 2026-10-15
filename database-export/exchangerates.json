@@ -1,0 +1,49 @@
+[
+  {
+    "_id": "6976360212c14cab4f5f35f2",
+    "currency": "USD",
+    "__v": 0,
+    "createdAt": "2026-01-25T15:25:54.276Z",
+    "expiryDate": "2026-01-30T06:25:00.000Z",
+    "isActive": true,
+    "lastUpdatedBy": "sk@horizonafrica.com",
+    "rate": 100,
+    "updatedAt": "2026-01-29T18:46:09.005Z",
+    "buyExpiryDate": "2026-01-30T06:25:00.000Z",
+    "buyRate": 100,
+    "comingSoon": false,
+    "sellExpiryDate": "2026-01-30T06:25:00.000Z",
+    "sellRate": 165.52,
+    "showOnPublic": true
+  },
+  {
+    "_id": "69763e8212c14cab4f5f3844",
+    "currency": "GBP",
+    "__v": 0,
+    "createdAt": "2026-01-25T16:02:10.242Z",
+    "expiryDate": "2026-01-30T19:00:00.000Z",
+    "isActive": true,
+    "lastUpdatedBy": "sk@horizonafrica.com",
+    "rate": 176,
+    "updatedAt": "2026-01-29T18:46:02.246Z",
+    "comingSoon": false,
+    "showOnPublic": true,
+    "buyExpiryDate": "2026-01-30T19:00:00.000Z",
+    "buyRate": 176,
+    "sellExpiryDate": "2026-01-30T19:00:00.000Z",
+    "sellRate": 174
+  },
+  {
+    "_id": "69775c787afabda9d54d138c",
+    "currency": "EUR",
+    "__v": 0,
+    "createdAt": "2026-01-26T12:22:16.241Z",
+    "expiryDate": "2026-01-27T13:22:00.000Z",
+    "isActive": true,
+    "lastUpdatedBy": "sk@horizonafrica.com",
+    "rate": 16,
+    "updatedAt": "2026-01-26T12:50:50.273Z",
+    "comingSoon": false,
+    "showOnPublic": false
+  }
+]

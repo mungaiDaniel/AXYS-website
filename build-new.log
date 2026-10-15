@@ -1,0 +1,89 @@
+yarn run v1.22.22
+$ next build
+▲ Next.js 16.1.4 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ Compiled successfully in 11.3s
+  Running TypeScript ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/40) ...
+  Generating static pages using 3 workers (10/40) 
+  Generating static pages using 3 workers (20/40) 
+  Generating static pages using 3 workers (30/40) 
+✓ Generating static pages using 3 workers (40/40) in 377.5ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /admin/analytics
+├ ○ /admin/contacts
+├ ○ /admin/dashboard
+├ ○ /admin/documents
+├ ○ /admin/exchange-rates
+├ ○ /admin/gdpr
+├ ○ /admin/global-funds
+├ ○ /admin/ipo-settings
+├ ○ /admin/login
+├ ○ /admin/pages
+├ ○ /admin/research
+├ ○ /admin/settings
+├ ○ /admin/settings/roles
+├ ○ /admin/users
+├ ƒ /api/[[...path]]
+├ ƒ /api/admin/analytics/stats
+├ ƒ /api/admin/audit-logs
+├ ƒ /api/admin/contacts
+├ ƒ /api/admin/dashboard
+├ ƒ /api/admin/documents
+├ ƒ /api/admin/email-settings
+├ ƒ /api/admin/exchange-rates
+├ ƒ /api/admin/global-funds
+├ ƒ /api/admin/ipo-settings
+├ ƒ /api/admin/page-settings
+├ ƒ /api/admin/page-settings/seed
+├ ƒ /api/admin/research
+├ ƒ /api/admin/roles
+├ ƒ /api/admin/users
+├ ƒ /api/analytics
+├ ƒ /api/auth/init
+├ ƒ /api/auth/login
+├ ƒ /api/auth/logout
+├ ƒ /api/auth/me
+├ ƒ /api/contact
+├ ƒ /api/documents
+├ ƒ /api/documents/download
+├ ƒ /api/exchange-rates
+├ ƒ /api/gdpr/user-data
+├ ƒ /api/health
+├ ƒ /api/page-visibility
+├ ƒ /api/research
+├ ƒ /api/research/download
+├ ○ /contact
+├ ○ /downloads
+├ ○ /exchange-rates
+├ ○ /faq
+├ ○ /fund-account/international-equities
+├ ○ /fund-account/local-stocks
+├ ○ /fund-account/multi-currency
+├ ○ /fund-account/offshore-funds
+├ ○ /global-markets
+├ ○ /group
+├ ○ /ipo
+├ ○ /leverage
+├ ○ /platforms
+├ ○ /privacy
+├ ○ /research
+├ ○ /services
+└ ○ /terms
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+Done in 14.59s.

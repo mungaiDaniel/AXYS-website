@@ -1,0 +1,170 @@
+[
+  {
+    "_id": "696f5638f78def411edfcf94",
+    "pageName": "home",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.404Z",
+    "updatedAt": "2026-01-29T20:30:42.676Z"
+  },
+  {
+    "_id": "696f5638f78def411edfcf95",
+    "pageName": "about",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.404Z",
+    "updatedAt": "2026-01-29T20:30:42.705Z"
+  },
+  {
+    "_id": "696f5638f78def411edfcf96",
+    "pageName": "group",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.404Z",
+    "updatedAt": "2026-01-29T20:30:42.707Z"
+  },
+  {
+    "_id": "696f5638f78def411edfcf97",
+    "pageName": "platforms",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.404Z",
+    "updatedAt": "2026-01-29T20:30:42.685Z"
+  },
+  {
+    "_id": "696f5638f78def411edfcf98",
+    "pageName": "services",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.404Z",
+    "updatedAt": "2026-01-29T20:30:42.683Z"
+  },
+  {
+    "_id": "696f5638f78def411edfcf99",
+    "pageName": "research",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.404Z",
+    "updatedAt": "2026-01-29T20:30:42.688Z"
+  },
+  {
+    "_id": "696f5638f78def411edfcf9a",
+    "pageName": "ipo",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.404Z",
+    "updatedAt": "2026-01-29T20:30:42.692Z"
+  },
+  {
+    "_id": "696f5638f78def411edfcf9b",
+    "pageName": "leverage",
+    "isVisible": false,
+    "showInNav": false,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.405Z",
+    "updatedAt": "2026-01-29T21:00:16.581Z",
+    "isAccessible": false
+  },
+  {
+    "_id": "696f5638f78def411edfcf9c",
+    "pageName": "faq",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.405Z",
+    "updatedAt": "2026-01-29T21:00:17.930Z",
+    "isAccessible": true
+  },
+  {
+    "_id": "696f5638f78def411edfcf9d",
+    "pageName": "contact",
+    "isVisible": true,
+    "showInNav": true,
+    "__v": 0,
+    "createdAt": "2026-01-20T10:17:28.405Z",
+    "updatedAt": "2026-01-29T20:30:42.699Z"
+  },
+  {
+    "_id": "697bc372e4d76488b0fee5af",
+    "pageName": "downloads",
+    "__v": 0,
+    "createdAt": "2026-01-29T20:30:42.690Z",
+    "isVisible": true,
+    "showInNav": true,
+    "updatedAt": "2026-01-29T20:30:42.690Z"
+  },
+  {
+    "_id": "697bc372e4d76488b0fee5b7",
+    "pageName": "global-markets",
+    "__v": 0,
+    "createdAt": "2026-01-29T20:30:42.711Z",
+    "isVisible": true,
+    "showInNav": true,
+    "updatedAt": "2026-01-29T20:30:42.711Z"
+  },
+  {
+    "_id": "697bc372e4d76488b0fee5b9",
+    "pageName": "fund-local-stocks",
+    "__v": 0,
+    "createdAt": "2026-01-29T20:30:42.712Z",
+    "isVisible": true,
+    "showInNav": true,
+    "updatedAt": "2026-01-30T06:46:21.993Z",
+    "isAccessible": true
+  },
+  {
+    "_id": "697bc372e4d76488b0fee5bb",
+    "pageName": "fund-multi-currency",
+    "__v": 0,
+    "createdAt": "2026-01-29T20:30:42.714Z",
+    "isVisible": true,
+    "showInNav": true,
+    "updatedAt": "2026-01-30T06:46:23.217Z",
+    "isAccessible": true
+  },
+  {
+    "_id": "697bc372e4d76488b0fee5bd",
+    "pageName": "fund-international",
+    "__v": 0,
+    "createdAt": "2026-01-29T20:30:42.716Z",
+    "isVisible": true,
+    "showInNav": true,
+    "updatedAt": "2026-01-30T06:46:24.395Z",
+    "isAccessible": true
+  },
+  {
+    "_id": "697bc372e4d76488b0fee5bf",
+    "pageName": "fund-offshore",
+    "__v": 0,
+    "createdAt": "2026-01-29T20:30:42.718Z",
+    "isVisible": true,
+    "showInNav": true,
+    "updatedAt": "2026-01-30T06:46:25.455Z",
+    "isAccessible": true
+  },
+  {
+    "_id": "697bc372e4d76488b0fee5c1",
+    "pageName": "privacy",
+    "__v": 0,
+    "createdAt": "2026-01-29T20:30:42.719Z",
+    "isVisible": true,
+    "showInNav": false,
+    "updatedAt": "2026-01-29T20:30:42.719Z"
+  },
+  {
+    "_id": "697bc372e4d76488b0fee5c3",
+    "pageName": "terms",
+    "__v": 0,
+    "createdAt": "2026-01-29T20:30:42.720Z",
+    "isVisible": true,
+    "showInNav": false,
+    "updatedAt": "2026-01-29T20:30:42.720Z"
+  }
+]
